@@ -22,12 +22,12 @@ This document records the development progress of the Bhaisajyaguru project.
 
 ### GitHub Pages Setup
 
-1. Go to https://github.com/GZ82/Bhaisajyaguru/settings/pages
+1. Go to https://github.com/pst-2016/Bhaisajyaguru/settings/pages
 2. Under "Source", select **Deploy from a branch**
 3. Select branch: **main**, folder: **/docs**
 4. Click **Save**
 
-**Site URL:** https://gz82.github.io/Bhaisajyaguru/
+**Site URL:** https://pst-2016.github.io/Bhaisajyaguru/
 
 ### Notes
 - GitHub Pages only free if the repo is public
