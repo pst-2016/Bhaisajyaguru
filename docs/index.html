@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>药师琉璃光如来 - Online Buddhist Temple</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <nav>
         <a href="index.html" class="active">佛堂 Temple</a>
@@ -14,120 +16,76 @@
     </nav>
 
     <div class="container">
-        <div class="row">
-            <h1 class="main-title">南无药师琉璃光如来</h1>
-        </div>
-
-        <div class="row temple-layout">
-            <div class="text-vertical" style="font-size: 32px;">无上士</div>
-            <div class="buddha-image">
-                <img src="images/main_pic.jpeg" alt="药师琉璃光如来">
-            </div>
-            <div class="text-vertical" style="font-size: 32px;">天人师</div>
-        </div>
-
-        <div class="row">
-            <div class="text-vertical" style="font-size: 32px;">佛</div>
-        </div>
-
-        <div class="temple-icons">
-            <button class="icon-btn" data-sound="bell" title="Temple Bell">
-                <span class="icon-emoji">🔔</span>
-                <span class="icon-label">钟 Bell</span>
-            </button>
-            <button class="icon-btn" data-sound="woodenfish" title="Wooden Fish">
-                <span class="icon-emoji">🪘</span>
-                <span class="icon-label">木鱼 Drum</span>
-            </button>
-            <button class="icon-btn" data-sound="beads" title="Prayer Beads">
-                <span class="icon-emoji">📿</span>
-                <span class="icon-label">念珠 Beads</span>
-            </button>
-            <button class="icon-btn" data-action="lotus" title="Lotus Offering">
-                <span class="icon-emoji">🪷</span>
-                <span class="icon-label">莲花 Lotus</span>
-            </button>
-            <button class="icon-btn" data-action="incense" title="Incense">
-                <span class="icon-emoji">🙏</span>
-                <span class="icon-label">香 Incense</span>
-            </button>
-        </div>
-
         <section class="temple-grounds">
             <h2 class="grounds-title">道场全图 Temple Grounds</h2>
             <div class="temple-map">
-                <!-- Row 1: 山门 (central only) -->
+                <!-- Row 1: 药师塔 (central only) -->
                 <div class="map-empty"></div>
-                <a href="#" class="building-btn axis-building">
-                    <span class="bldg-name">山门</span>
-                    <span class="bldg-sub">Mountain Gate</span>
+                <a href="halls/yaoshita.html" class="building-btn axis-building pagoda">
+                    <span class="bldg-name">药师塔</span>
+                    <span class="bldg-sub">Medicine Buddha Pagoda</span>
                 </a>
                 <div class="map-empty"></div>
 
-                <!-- Row 2: 鼓楼 + 天王殿 + 钟楼 -->
-                <a href="#" class="building-btn wing-building">
-                    <span class="bldg-name">鼓楼</span>
-                    <span class="bldg-sub">Drum Tower</span>
-                </a>
-                <a href="#" class="building-btn axis-building">
-                    <span class="bldg-name">天王殿</span>
-                    <span class="bldg-sub">Heavenly Kings Hall</span>
-                </a>
-                <a href="#" class="building-btn wing-building">
-                    <span class="bldg-name">钟楼</span>
-                    <span class="bldg-sub">Bell Tower</span>
-                </a>
-
-                <!-- Row 3: 地藏殿 + 大雄宝殿 + 观音殿 -->
-                <a href="#" class="building-btn wing-building">
-                    <span class="bldg-name">地藏殿</span>
-                    <span class="bldg-sub">Dizang Hall</span>
-                </a>
-                <a href="#" class="building-btn axis-building">
-                    <span class="bldg-name">大雄宝殿</span>
-                    <span class="bldg-sub">Main Hall</span>
-                </a>
-                <a href="#" class="building-btn wing-building">
-                    <span class="bldg-name">观音殿</span>
-                    <span class="bldg-sub">Guanyin Hall</span>
-                </a>
-
-                <!-- Row 4: 斋堂 + 药师殿 + 药草园 -->
-                <a href="#" class="building-btn wing-building">
+                <!-- Row 2: 斋堂 + 药师殿 + 药草园 -->
+                <a href="halls/zhaitang.html" class="building-btn wing-building">
                     <span class="bldg-name">斋堂</span>
                     <span class="bldg-sub">Dining Hall</span>
                 </a>
-                <a href="#" class="building-btn axis-building">
+                <a href="halls/yaoshidian.html" class="building-btn axis-building">
                     <span class="bldg-name">药师殿</span>
                     <span class="bldg-sub">Medicine Buddha Hall</span>
                 </a>
-                <a href="#" class="building-btn wing-building">
+                <a href="halls/yaocaoyuan.html" class="building-btn wing-building">
                     <span class="bldg-name">药草园</span>
                     <span class="bldg-sub">Herb Garden</span>
                 </a>
 
-                <!-- Row 5: 药师塔 (central only) -->
+                <!-- Row 3: 地藏殿 + 大雄宝殿 + 观音殿 -->
+                <a href="halls/dizangdian.html" class="building-btn wing-building">
+                    <span class="bldg-name">地藏殿</span>
+                    <span class="bldg-sub">Dizang Hall</span>
+                </a>
+                <a href="halls/daxiongbaodian.html" class="building-btn axis-building">
+                    <span class="bldg-name">大雄宝殿</span>
+                    <span class="bldg-sub">Main Hall</span>
+                </a>
+                <a href="halls/guanyindian.html" class="building-btn wing-building">
+                    <span class="bldg-name">观音殿</span>
+                    <span class="bldg-sub">Guanyin Hall</span>
+                </a>
+
+                <!-- Row 4: 鼓楼 + 天王殿 + 钟楼 -->
+                <a href="halls/gulou.html" class="building-btn wing-building">
+                    <span class="bldg-name">鼓楼</span>
+                    <span class="bldg-sub">Drum Tower</span>
+                </a>
+                <a href="halls/tianwangdian.html" class="building-btn axis-building">
+                    <span class="bldg-name">天王殿</span>
+                    <span class="bldg-sub">Heavenly Kings Hall</span>
+                </a>
+                <a href="halls/zhonglou.html" class="building-btn wing-building">
+                    <span class="bldg-name">钟楼</span>
+                    <span class="bldg-sub">Bell Tower</span>
+                </a>
+
+                <!-- Row 5: 山门 (central only) -->
                 <div class="map-empty"></div>
-                <a href="#" class="building-btn axis-building pagoda">
-                    <span class="bldg-name">药师塔</span>
-                    <span class="bldg-sub">Medicine Buddha Pagoda</span>
+                <a href="halls/shanmen.html" class="building-btn axis-building">
+                    <span class="bldg-name">山门</span>
+                    <span class="bldg-sub">Mountain Gate</span>
                 </a>
                 <div class="map-empty"></div>
             </div>
         </section>
 
-        <div class="mantra-section">
-            <p class="mantra-text">
-                南无薄伽伐帝。鞞杀社。窭噜薜琉璃。钵喇婆。喝啰阇也。怛他揭多也。阿啰喝帝。三藐三勃陀耶。怛侄他。唵。鞞杀逝。鞞杀逝。鞞杀社。三没揭帝莎诃。
-            </p>
-            <p class="mantra-label">药师琉璃光如来灌顶真言</p>
-        </div>
     </div>
 
     <footer>
         <p>南无药师琉璃光如来 | Bhaisajyaguru Online Temple</p>
     </footer>
 
-    <script src="js/temple.js"></script>
+
 </body>
+
 </html>

@@ -36,5 +36,8 @@ This document records the development progress of the Bhaisajyaguru project.
 ---
 
 ## Next Steps
+- [ ] Perchase domain
+- [ ] Proselytize while building halls
 
+## Done
 - [ ] Discuss and implement the structure of current GitHub Pages site

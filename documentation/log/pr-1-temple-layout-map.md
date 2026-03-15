@@ -49,8 +49,8 @@ Retrofit the main page (`index.html`) to display a spatial map of the temple gro
 - Map orientation: left = West, right = East, top = South (entrance), bottom = North (deepest) — matches visitor perspective entering the temple
 
 ## TODO
-- [ ] Rearrange main page layout (order and placement of existing sections)
-- [ ] Wire sub-page links to each building button
+- [X] Rearrange main page layout (order and placement of existing sections)
+- [X] Wire sub-page links to each building button
 - [ ] Add building detail pages per structure
 
 ## References

@@ -35,4 +35,4 @@ git push
 git checkout codespaces
 ```
 
-> GitHub Pages serves from `main`. Changes are live at https://gz82.github.io/Bhaisajyaguru/ within a minute or two after push.
+> GitHub Pages serves from `main`. Changes are live at https://pst-2016.github.io/Bhaisajyaguru/ within a minute or two after push.
