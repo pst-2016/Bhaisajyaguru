@@ -35,6 +35,7 @@ Add the following DNS records.
 | A | @ | 185.199.111.153 |
 
 Proxy status: **DNS only**
+This can swtich back once the whole process is done.
 
 ### Subdomain
 | Type | Name | Value |
@@ -53,7 +54,7 @@ GitHub may initially show:
 DNS check unsuccessful
 ```
 
-Wait a few minutes until it becomes:
+Wait a few minutes or try a few times, until it becomes:
 
 ```
 DNS check successful
