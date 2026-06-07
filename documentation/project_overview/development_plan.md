@@ -251,7 +251,7 @@ Contact information and support options.
 │   │   ├── beads.jpg
 │   │   ├── lotus.jpg
 │   │   └── incense.jpg
-│   ├── main_pic.jpeg       # (existing)
+│   ├── main_pic.png       # (existing)
 │   └── qr.jpeg             # (existing)
 └── sounds/
     ├── bell.mp3

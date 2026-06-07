@@ -7,20 +7,21 @@
     "customizations": {
         "vscode": {
             "settings": {
-                "python.defaultInterpreterPath": "/usr/local/bin/python",
                 "editor.formatOnSave": true
             },
             "extensions": [
-                "ms-python.python",
-                "ms-python.vscode-pylance",
-                "ms-python.flask-snippets",
-                "njpwerner.autodocstring"
+                "anthropic.claude-code"
             ]
         }
     },
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+        "version": "lts"
+        }
+    },
+    "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
     "forwardPorts": [
-        5000
+        8000
     ],
-    "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
     "remoteUser": "vscode"
 }

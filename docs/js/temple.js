@@ -24,7 +24,33 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Homage page offerings (献花 / 上香)
+    const offerButtons = document.querySelectorAll('.offer-btn');
+
+    offerButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+
+            handleOffering(this.dataset.offering);
+        });
+    });
 });
+
+function handleOffering(type) {
+    const messages = {
+        'flower': '🪷 献花功德 · Flowers offered',
+        'incense': '🕯️ 香供养 · Incense offered',
+        'lamp': '🪔 燃灯续命 · Lamp offered'
+    };
+
+    if (messages[type]) {
+        showNotification(messages[type]);
+    }
+}
 
 function playSound(type) {
     // Sound playback - will work when audio files are added

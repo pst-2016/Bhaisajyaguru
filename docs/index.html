@@ -1,64 +1,80 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>药师琉璃光如来 - Online Buddhist Temple</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <nav>
-        <a href="index.html" class="active">佛堂 Temple</a>
+        <a href="index.html" class="active">礼佛 Homage</a>
+        <a href="temple.html">道场 Temple</a>
         <a href="scriptures.html">经典 Scriptures</a>
         <a href="contacts.html">联系 Contacts</a>
     </nav>
 
     <div class="container">
-        <div class="row">
-            <h1 class="main-title">南无药师琉璃光如来</h1>
-        </div>
+        <section class="homage">
+            <h1 class="homage-title">药师琉璃光如来</h1>
+            <p class="homage-subtitle">Bhaisajyaguru · Medicine Buddha</p>
 
-        <div class="row temple-layout">
-            <div class="text-vertical" style="font-size: 32px;">无上士</div>
-            <div class="buddha-image">
-                <img src="images/main_pic.jpeg" alt="药师琉璃光如来">
+            <div class="buddha-shrine">
+                <img src="images/main_pic.png" alt="药师琉璃光如来 Medicine Buddha" class="buddha-portrait">
             </div>
-            <div class="text-vertical" style="font-size: 32px;">天人师</div>
-        </div>
 
-        <div class="row">
-            <div class="text-vertical" style="font-size: 32px;">佛</div>
-        </div>
+            <div class="offerings">
+                <button class="offer-btn" data-offering="flower">
+                    <svg class="offer-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M16 25C16 25 10 20 10 14C10 10.5 12.5 8 16 13C19.5 8 22 10.5 22 14C22 20 16 25 16 25Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 25C13 22 6 21 5 14C10 15 13 18 16 25Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 25C19 22 26 21 27 14C22 15 19 18 16 25Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 27H23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="offer-label">献花</span>
+                </button>
+                <button class="offer-btn" data-offering="incense">
+                    <svg class="offer-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M12 14V26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M16 12V26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M20 14V26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M9 26H23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M13 8C11 6 13 4 15 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        <path d="M17 8C15 6 17 4 19 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        <path d="M21 9C19 7 21 5 23 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                    <span class="offer-label">上香</span>
+                </button>
+                <button class="offer-btn" data-offering="lamp">
+                    <svg class="offer-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M16 5C16 5 12 9 12 13C12 15.5 13.8 17 16 17C18.2 17 20 15.5 20 13C20 9 16 5 16 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 19H22L20 26H12L10 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 26H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M13 22H19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                    <span class="offer-label">供灯</span>
+                </button>
+            </div>
 
-        <div class="temple-icons">
-            <button class="icon-btn" data-sound="bell" title="Temple Bell">
-                <span class="icon-emoji">🔔</span>
-                <span class="icon-label">钟 Bell</span>
-            </button>
-            <button class="icon-btn" data-sound="woodenfish" title="Wooden Fish">
-                <span class="icon-emoji">🪘</span>
-                <span class="icon-label">木鱼 Drum</span>
-            </button>
-            <button class="icon-btn" data-sound="beads" title="Prayer Beads">
-                <span class="icon-emoji">📿</span>
-                <span class="icon-label">念珠 Beads</span>
-            </button>
-            <button class="icon-btn" data-action="lotus" title="Lotus Offering">
-                <span class="icon-emoji">🪷</span>
-                <span class="icon-label">莲花 Lotus</span>
-            </button>
-            <button class="icon-btn" data-action="incense" title="Incense">
-                <span class="icon-emoji">🙏</span>
-                <span class="icon-label">香 Incense</span>
-            </button>
-        </div>
+        </section>
 
-        <div class="mantra-section">
-            <p class="mantra-text">
-                南无薄伽伐帝。鞞杀社。窭噜薜琉璃。钵喇婆。喝啰阇也。怛他揭多也。阿啰喝帝。三藐三勃陀耶。怛侄他。唵。鞞杀逝。鞞杀逝。鞞杀社。三没揭帝莎诃。
-            </p>
-            <p class="mantra-label">药师琉璃光如来灌顶真言</p>
-        </div>
+        <section class="practice">
+            <div class="practice-card recite-card">
+                <span class="practice-label">每日念诵 · Daily Recitation</span>
+                <p class="recite-name">南无药师琉璃光如来</p>
+                <div class="practice-divider">❁</div>
+                <p class="recite-merit">早晚三次　消灾延寿　祛病增财</p>
+            </div>
+
+            <div class="practice-card dharani-card">
+                <span class="practice-label">药师灌顶真言 · Medicine Buddha Dharani</span>
+                <p class="dharani-text">南无薄伽伐帝。鞞杀社窭噜。薜琉璃跋喇婆喝啰阇也。怛他揭多也。阿啰喝帝。三藐三勃陀耶。怛侄他。唵。鞞刹逝。鞞刹逝。鞞刹社。三没揭帝莎诃。</p>
+                <div class="practice-divider">❁</div>
+                <p class="dharani-roman">oṃ bhaiṣajye bhaiṣajye bhaiṣajya-samudgate svāhā</p>
+            </div>
+        </section>
     </div>
 
     <footer>
@@ -67,4 +83,5 @@
 
     <script src="js/temple.js"></script>
 </body>
+
 </html>

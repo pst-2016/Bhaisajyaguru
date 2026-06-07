@@ -86,7 +86,7 @@ Static Site:
 ├── images/
 │   ├── buddha/
 │   ├── icons/
-│   ├── main_pic.jpeg
+│   ├── main_pic.png
 │   └── qr.jpeg
 ├── sounds/
 │   ├── bell.mp3
