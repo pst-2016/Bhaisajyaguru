@@ -8,7 +8,8 @@
 </head>
 <body>
     <nav>
-        <a href="../index.html">佛堂 Temple</a>
+        <a href="../index.html">礼佛 Homage</a>
+        <a href="../temple.html">道场 Temple</a>
         <a href="../scriptures.html" class="active">经典 Scriptures</a>
         <a href="../contacts.html">联系 Contacts</a>
     </nav>
@@ -27,17 +28,20 @@
                 南无薄伽伐帝。鞞杀社。窭噜薜琉璃。钵喇婆。喝啰阇也。怛他揭多也。阿啰喝帝。三藐三勃陀耶。怛侄他。唵。鞞杀逝。鞞杀逝。鞞杀社。三没揭帝莎诃。
             </p>
 
-            <h2>经文（节选）</h2>
-            <div class="sutra-text">
-                <p>如是我闻。一时薄伽梵游化诸国。至广严城。住乐音树下。与大苾刍众八千人俱。菩萨摩诃萨三万六千。及国王大臣。婆罗门居士。天龙八部。人非人等。无量大众。恭敬围绕。而为说法。</p>
+            <h2>经文 Full Sutra</h2>
+            <p class="sutra-translator">大唐三藏法师玄奘奉诏译</p>
 
-                <p>尔时曼殊室利法王子。承佛威神。从座而起。偏袒一肩。右膝着地。向薄伽梵。曲躬合掌。白言。世尊。惟愿演说如是相类诸佛名号。及本大愿殊胜功德。令诸闻者。业障消除。为欲利乐像法转时诸有情故。</p>
+            <div id="sutra-reader" class="sutra-reader">
+                <div class="sutra-page">
+                    <h3 id="sutra-page-heading" class="sutra-page-heading"></h3>
+                    <div id="sutra-page-body" class="sutra-page-body"></div>
+                </div>
+                <div class="sutra-nav">
+                    <button id="sutra-prev" class="sutra-btn" type="button">&larr; 上一页 Prev</button>
+                    <span id="sutra-indicator" class="sutra-indicator"></span>
+                    <button id="sutra-next" class="sutra-btn" type="button">下一页 Next &rarr;</button>
+                </div>
             </div>
-
-            <p class="scripture-note">
-                完整经文请参阅佛教典籍。<br>
-                For the complete sutra, please refer to Buddhist scriptures.
-            </p>
         </div>
 
         <div class="back-link">
@@ -84,11 +88,101 @@
             text-indent: 2em;
         }
 
-        .scripture-note {
-            font-size: 14px;
-            color: #888;
+        .sutra-translator {
             text-align: center;
-            margin-top: 30px;
+            color: #777;
+            font-size: 14px;
+            margin: -6px 0 18px;
+            letter-spacing: 1px;
+        }
+
+        /* Paginated sutra reader */
+        .sutra-reader {
+            background: #f9f5f0;
+            border: 1px solid #e6dccb;
+            border-radius: 10px;
+            padding: 28px 26px 20px;
+            margin: 20px 0;
+        }
+
+        .sutra-page-heading {
+            text-align: center;
+            color: #8B0000;
+            font-size: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e0d5c2;
+        }
+
+        .sutra-page-body {
+            min-height: 260px;
+            max-height: 60vh;
+            overflow-y: auto;
+            padding-right: 6px;
+        }
+
+        .sutra-page-body p {
+            font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+            font-size: 18px;
+            line-height: 2.2;
+            margin-bottom: 18px;
+            text-indent: 2em;
+            color: #2a2a2a;
+        }
+
+        .sutra-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-top: 18px;
+            padding-top: 16px;
+            border-top: 1px solid #e0d5c2;
+        }
+
+        .sutra-btn {
+            background: linear-gradient(135deg, #D4AF37, #B8860B);
+            color: #1A1A1A;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 18px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+        }
+
+        .sutra-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+        }
+
+        .sutra-btn:disabled {
+            opacity: 0.4;
+            cursor: default;
+        }
+
+        .sutra-indicator {
+            font-size: 15px;
+            color: #8B0000;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .sutra-reader {
+                padding: 20px 16px 16px;
+            }
+
+            .sutra-page-body p {
+                font-size: 16px;
+                line-height: 2.1;
+            }
+
+            .sutra-btn {
+                padding: 9px 12px;
+                font-size: 13px;
+            }
         }
 
         .back-link {
@@ -105,5 +199,8 @@
             text-decoration: underline;
         }
     </style>
+
+    <script src="../js/medicine-buddha-sutra.js"></script>
+    <script src="../js/sutra-reader.js"></script>
 </body>
 </html>

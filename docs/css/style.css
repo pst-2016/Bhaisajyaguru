@@ -137,6 +137,164 @@ nav a.active {
     font-weight: 500;
 }
 
+/* Homage (Home) Page */
+.homage {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.homage-title {
+    font-size: 42px;
+    color: #8B0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 4px;
+}
+
+.homage-subtitle {
+    font-size: 16px;
+    color: #555;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+
+.buddha-shrine {
+    position: relative;
+    display: inline-block;
+    margin: 36px auto;
+    padding: 30px;
+}
+
+/* Soft gold halo glow behind the Buddha image */
+.buddha-shrine::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.55) 0%, rgba(212, 175, 55, 0.18) 45%, rgba(135, 206, 235, 0) 72%);
+    z-index: 0;
+}
+
+.buddha-portrait {
+    position: relative;
+    z-index: 1;
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+}
+
+.offerings {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 24px;
+}
+
+.offer-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: 1px solid #D8B56D;
+    background: #FFF8E8;
+    color: #8A5A2B;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.offer-btn:hover {
+    background: #F5E4B8;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(184, 134, 11, 0.25);
+}
+
+.offer-btn:active {
+    transform: translateY(0);
+}
+
+.offer-icon {
+    width: 26px;
+    height: 26px;
+    color: #B8860B;
+    flex-shrink: 0;
+}
+
+.offer-label {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Practice Section (Recitation + Dharani) */
+.practice {
+    max-width: 760px;
+    margin: 10px auto 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.practice-card {
+    background: rgba(255, 255, 255, 0.92);
+    border-top: 3px solid #D4AF37;
+    border-radius: 14px;
+    padding: 34px 36px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.practice-label {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #8B0000;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.practice-divider {
+    color: #D4AF37;
+    font-size: 18px;
+    margin: 16px 0;
+    line-height: 1;
+}
+
+.recite-name {
+    font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #8B0000;
+    letter-spacing: 4px;
+    line-height: 1.4;
+}
+
+.recite-merit {
+    font-size: 17px;
+    color: #444;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.dharani-text {
+    font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+    font-size: 18px;
+    color: #2a2a2a;
+    line-height: 2.3;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.dharani-roman {
+    font-size: 15px;
+    font-style: italic;
+    color: #777;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
 /* Temple Grounds Map */
 .temple-grounds {
     margin: 40px 0;
@@ -384,6 +542,41 @@ footer p {
 
     .buddha-image img {
         max-width: 280px;
+    }
+
+    .homage-title {
+        font-size: 30px;
+    }
+
+    .buddha-portrait {
+        max-width: 280px;
+    }
+
+    .offerings {
+        gap: 18px;
+    }
+
+    .offer-btn {
+        padding: 9px 16px;
+    }
+
+    .offer-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .practice-card {
+        padding: 26px 22px;
+    }
+
+    .recite-name {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .dharani-text {
+        font-size: 16px;
+        line-height: 2.1;
     }
 
     nav a {

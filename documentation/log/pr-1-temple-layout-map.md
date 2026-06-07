@@ -51,6 +51,7 @@ Retrofit the main page (`index.html`) to display a spatial map of the temple gro
 ## TODO
 - [X] Rearrange main page layout (order and placement of existing sections)
 - [X] Wire sub-page links to each building button
+- [X] Add new main page a picture of Buddha use the picture docs/images/main_pic.jpeg,current main page as "道场 Temple"
 - [ ] Add building detail pages per structure
 
 ## References
